@@ -6,4 +6,34 @@
         --color-primary-dark: #0284c7;/* sky-600 */
         --color-text-primary: #1e293b;/* slate-800 */
         --color-text-secondary: #64748b;/* slate-400 */
+        @keyframes scroll-logo {
+            0%   { transform: translateX(100%); opacity: 0; }
+            10%  { opacity: 1; }
+            90%  { opacity: 1; }
+            100% { transform: translateX(-100%); opacity: 0; }
+        }
 }
+@keyframes scroll-logo {
+
+  0%   { transform: translateX(100%); opacity: 0; }
+
+  10%  { opacity: 1; }
+
+  90%  { opacity: 1; }
+
+  100% { transform: translateX(-100%); opacity: 0; }
+}
+
+.animate-scrollLogo {
+  animation: scroll-logo 20s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-50rem) scale(1.1); }
+  100% { transform: translateY(0) scale(1); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
