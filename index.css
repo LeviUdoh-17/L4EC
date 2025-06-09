@@ -1,0 +1,51 @@
+body{
+    margin: 0 5% 0 10%;
+}
+#section2-images {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  overflow: hidden;
+  margin: 7rem 0;
+  padding: 5rem 0;
+  /* border: 4px solid grey; */
+  width: 100%;
+  gap: 5rem;
+  /* margin: 0 5% 0 10%; */
+
+  /* flex-wrap: wrap; */
+}
+
+#logo2 {
+  height: 70px;
+  display: flex;
+  width: auto;
+  animation: rotate-logo 16s linear infinite;
+  flex-shrink: 0;
+  gap: 2rem;
+  /* margin: 0 120px 0 120px; */
+}
+img {
+  /* filter: brightness(0) saturate(100%); */
+  gap: 50px;
+}
+#logo5{
+    height: 5rem;
+}
+
+@keyframes rotate-logo {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
