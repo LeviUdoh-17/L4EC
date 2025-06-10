@@ -63,3 +63,6 @@
 
 }
 }
+#sidebarContainer{
+  scrollbar-width: none;
+}
