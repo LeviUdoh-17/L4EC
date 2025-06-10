@@ -37,3 +37,29 @@
   animation: float 6s ease-in-out infinite;
 }
 
+/* HAMBURGER SECTION */
+
+#sidebarToggle{
+  display: none;
+  cursor: pointer;
+}
+
+
+#sidebarToggle:checked + #sidebarSide{
+  display: flex;
+
+}
+#sidebarToggle:disabled + #sidebarSide{
+  display: none;
+
+}
+@media screen and (min-width:1024px){
+  #sidebarToggle{
+  display: none !important;
+  
+}
+#sidebarToggle:checked + #sidebarSide{
+  display: none;
+
+}
+}
