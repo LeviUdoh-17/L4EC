@@ -1,27 +1,46 @@
+@theme {
+  /* Colors */
+  --color-primary: #0ea5e9; /* sky-500 */
+  --color-primary-dark: #0284c7; /* sky-600 */
+  --color-text-primary: #1e293b; /* slate-800 */
+  --color-text-secondary: #64748b; /* slate-400 */
 @import "tailwindcss";
 
-@theme {
-         /* Colors */
-        --color-primary: #0ea5e9;     /* sky-500 */
-        --color-primary-dark: #0284c7;/* sky-600 */
-        --color-text-primary: #1e293b;/* slate-800 */
-        --color-text-secondary: #64748b;/* slate-400 */
-        @keyframes scroll-logo {
-            0%   { transform: translateX(100%); opacity: 0; }
-            10%  { opacity: 1; }
-            90%  { opacity: 1; }
-            100% { transform: translateX(-100%); opacity: 0; }
-        }
+  @keyframes scroll-logo {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+  }
 }
 @keyframes scroll-logo {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
 
-  0%   { transform: translateX(100%); opacity: 0; }
+  10% {
+    opacity: 1;
+  }
 
-  10%  { opacity: 1; }
+  90% {
+    opacity: 1;
+  }
 
-  90%  { opacity: 1; }
-
-  100% { transform: translateX(-100%); opacity: 0; }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
 .animate-scrollLogo {
@@ -29,9 +48,15 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-50rem) scale(1.1); }
-  100% { transform: translateY(0) scale(1); }
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-50rem) scale(1.1);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }
 .animate-float {
   animation: float 6s ease-in-out infinite;
@@ -39,30 +64,25 @@
 
 /* HAMBURGER SECTION */
 
-#sidebarToggle{
+#sidebarToggle {
   display: none;
   cursor: pointer;
 }
 
-
-#sidebarToggle:checked + #sidebarSide{
+#sidebarToggle:checked + #sidebarSide {
   display: flex;
-
 }
-#sidebarToggle:disabled + #sidebarSide{
+#sidebarToggle:disabled + #sidebarSide {
   display: none;
-
 }
-@media screen and (min-width:1024px){
-  #sidebarToggle{
-  display: none !important;
-  
+@media screen and (min-width: 1024px) {
+  #sidebarToggle {
+    display: none !important;
+  }
+  #sidebarToggle:checked + #sidebarSide {
+    display: none;
+  }
 }
-#sidebarToggle:checked + #sidebarSide{
-  display: none;
-
-}
-}
-#sidebarContainer{
+#sidebarContainer {
   scrollbar-width: none;
 }
