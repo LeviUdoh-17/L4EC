@@ -19,54 +19,59 @@
   <body class="bg-gradient-to-r from-sky-300 to-white bg-gray-100">
     <nav
       id="navbar"
-      class="bg-transparent transition-bg bg-gradient-to-r from-sky-300 to-white bg-gray-100 sticky top-0 z-50 shadow-md mt-5 flex justify-between mx-5 lg:mx-30 md:mx-30"
+      class="transition-bg py-2   px-5 bg-white/75 sticky top-0 z-50 shadow-md flex justify-between"
     >
       <div id="logo" class="flex items-center gap-2">
         <img
           src="./image/logo2.png"
           alt="L4EC logo"
-          style="width: 7rem; height: auto"
+          style="width: 4rem; height: auto"
         />
         <p
-          class="text-xl justify-center items-start flex-col font-bold text-slate-900 text-white"
+          class="text-xl justify-center items-start flex flex-col gap-1 font-bold text-slate-900"
         >
-          ENTERPRISE <br />
+          <span>ENTERPRISE</span>
           <span class="font-normal text-xs">CONSULTING LLC</span>
         </p>
       </div>
       <div
         id="navLinkContainer"
-        class="lg:flex gap-5 items-center font-normal hidden"
+        class="lg:flex gap-10 items-center font-normal hidden"
       >
         <a
           href="#"
-          class="border hover:transition-300 ease-in-out rounded-lg hover:scale-110 text-white bg-slate-900 border-slate-900 px-[2rem] py-[1rem] text-md font-medium text-blue-950 hover:underline"
+          class="hover:transition-300 ease-in-out rounded-lg hover:scale-110 py-[1rem] text-md font-medium text-blue-950 hover:underline"
           >Home</a
         >
         <a
           href="#"
-          class="border hover:transition-300 ease-in-out hover:scale-110 rounded-lg text-white bg-slate-900 border-slate-900 px-[2rem] py-[1rem] text-md font-medium hover:underline"
+          class="hover:transition-300 ease-in-out hover:scale-110 rounded-lg py-[1rem] text-md font-medium hover:underline"
           >About Us</a
         >
         <a
           href="#"
-          class="border hover:transition-300 ease-in-out rounded-lg hover:scale-110 text-white bg-slate-900 border-slate-900 px-[2rem] py-[1rem] text-md font-medium hover:underline"
+          class="hover:transition-300 ease-in-out rounded-lg hover:scale-110 py-[1rem] text-md font-medium hover:underline"
+          >Capability Statement</a
+        >
+        <a
+          href="#"
+          class="hover:transition-300 ease-in-out rounded-lg hover:scale-110 py-[1rem] text-md font-medium hover:underline"
           >Services</a
         >
         <a
           href="#"
-          class="border hover:transition-300 ease-in-out rounded-lg hover:scale-110 text-white bg-slate-900 border-slate-900 px-[2rem] py-[1rem] text-md font-medium hover:underline"
-          >Capability Statement</a
+          class="hover:transition-300 ease-in-out rounded-lg hover:scale-110 py-[1rem] text-md font-medium hover:underline"
+          >Sector We Serve</a
         >
       </div>
       <div
         id="navContact"
-        class="lg:flex hover:bg-slate-900 hover:text-white px-[1rem] py-[1rem] items-center border px-3 py-2 rounded-lg hidden"
+        class="lg:flex hover:bg-slate-900 h-max my-auto hover:text-white items-center border px-4 py-2 rounded-lg hidden"
       >
-        <button>Contact Us</button>
+        <button class="p-0">Contact Us</button>
       </div>
 
-      <label for="sidebarToggle" class="lg:hidden">
+      <label for="sidebarToggle" class="lg:hidden my-auto pr-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -87,27 +92,29 @@
       <input type="checkbox" id="sidebarToggle" class="hidden" />
       <aside
         id="sidebarSide"
-        class="hidden peer-checked:block bg-sky-50 fixed top-0 right-0 w-full lg:hidden sm:w-[60vw] md:w-[40vw] h-[100vh] z-[50] shadow-lg overflow-y-auto"
+        class="hidden peer-checked:block bg-sky-50 fixed top-0 right-0 w-full lg:hidden sm:w-[60vw] md:w-[50vw] h-[100vh] z-[50] shadow-lg overflow-y-auto"
       >
         <div
           id="sidebarContainer"
           class="flex flex-col absolute top-0 right-0 p-7 mx-15 w-[80%] overflow-scroll leading-relaxed justify-around h-[80%] md:px-5 md:py-5 md:text-start"
         >
-          <div id="sidebarLogo" class="flex">
-            <img
-              src="/image/logo2.png"
-              alt="L4EC logo"
-              style="width: 3rem; height: auto"
-            />
-            <p
-              class="flex justify-center items-start flex-col font-bold text-slate-900"
-            >
-              ENTERPRISE <span class="font-normal text-xs">CONSULTING LLC</span>
-            </p>
+          <div id="sidebarLogo" class="flex justify-between w-full">
+            <div class="flex">
+              <img 
+                class="object-contain h-auto w-25"
+                src="/image/logo2.png"
+                alt="L4EC logo"
+              />
+              <p
+                class="flex justify-center items-start flex-col font-bold text-slate-900"
+              >
+                ENTERPRISE <span class="font-normal text-xs">CONSULTING LLC</span>
+              </p>
+            </div>
 
             <label
               for="sidebarToggle"
-              class="lg:hidden flex items-center pl-[10rem] sm:pl-20"
+              class="lg:hidden flex items-center sm:pl-20"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -176,25 +183,25 @@
 
     <main class="mx-5 md:mx-30 mt-20 md:mt-0 mb-10 z-10">
       <section
-        class="pt-0 pb-0 sm:py-20 text-start font-sans flex gap-10 h-screen text-slate-900 flex-col mb-[60%] sm:mb-[100%] lg:mb-0 lg:flex-row"
+        class="pt-0 pb-0 sm:py-15 justify-center items-around text-start font-sans flex gap-10 h-full text-slate-900 flex-col mb-10 lg:flex-row"
       >
-        <div id="left" class="my-auto">
+        <div id="left" class="">
           <h1 class="text-4xl md:text-6xl font-bold text-text-primary mb-13">
             Transforming Organizations Through Smart Solutions
           </h1>
           <p
-            class="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-6"
+            class="text-lg md:text-xl text-text-secondary max-w-3xl mx-auto mb-4"
           >
             We deliver tailored consulting, digital transformation, and
             technology services to elevate business outcomes.
           </p>
           <button
-            class="bg-slate-900 hover:bg-blue-900 text-white px-6 py-3 rounded-2xl text-lg font-semibold transition"
+            class="bg-slate-900 hover:bg-blue-900 text-white px-6 py-3 mr-5 mb-5 rounded-2xl text-lg font-semibold transition"
           >
             About
           </button>
           <button
-            class="border border-slate-900 hover:bg-sky-300 hover:text-slate-800 text-slate-900 px-6 py-3 rounded-2xl text-lg font-semibold transition"
+            class="border border-slate-900 hover:text-white hover:bg-slate-900 text-slate-900 px-6 py-3 rounded-2xl text-lg font-semibold transition"
           >
             Capability Statement
           </button>
@@ -241,23 +248,7 @@
           </div>
         </div>
       </section>
-      <section
-        class="flex justify-between overflow-hidden pt-5 pb-20 sm:py-20 lg:pt-5 lg:pb-20 gap-20"
-      >
-        <div class="h-[70px] flex animate-scrollLogo shrink-0 gap-8">
-          <img src="./image/P10.png" alt="" />
-          <img src="./image/P1.png" alt="" />
-          <img src="./image/P2.png" alt="" />
-          <img src="./image/P3.png" alt="" />
-          <img src="./image/P4.png" alt="" />
-          <img src="./image/P5.png" alt="" class="h-20" />
-          <img src="./image/P6.png" alt="" />
-          <img src="./image/p7.png" alt="" />
-          <img src="./image/P8.png" alt="" />
-          <img src="./image/P13.png" alt="" />
-        </div>
-      </section>
-      <section class="">
+      <section>
         <div class="flex ml-10 items-center">
           <div
             class="w-10 flex rounded-full h-[.2rem] mt-[.3rem] items-center bg-blue-900"
